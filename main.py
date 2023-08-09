@@ -20,13 +20,13 @@ def main():
 
 	else:
 		print("		edit distance model		")
-		for word, score in result["edit distance"].items():
-			print(f"		word ----> {word} and score {score}")
+		for index, word in enumerate(result["edit distance"]):
+			print(f"		 {index + 1}----> {word}")
 
+		print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
 
 		print("		jaccard similarity model		")
-		for word, score in result["jaccard similarity"].items():
-			print(f"		word ----> {word} and score {score}")
+		for index, word in enumerate(result["jaccard similarity"]):
+			print(f"		 {index + 1}----> {word}")
 
 main()
-
