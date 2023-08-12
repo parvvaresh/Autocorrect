@@ -12,7 +12,6 @@ def main():
 
 	text = input("please enter words : ")
 	text = pr.process(text, lng_input)
-	print(text)
 
 	result = gw.get(text, lng_input)
 
